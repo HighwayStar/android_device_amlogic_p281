@@ -1,0 +1,8 @@
+# Amlogic
+boot/dwc3.ko:recovery/root/boot/dwc3.ko
+boot/dwc_otg.ko:recovery/root/boot/dwc_otg.ko
+etc/mesondisplay.cfg:recovery/root/etc/mesondisplay.cfg
+etc/recovery.kl:recovery/root/etc/recovery.kl
+etc/remote.conf:recovery/root/etc/remote.conf
+sbin/remotecfg:recovery/root/sbin/remotecfg
+sbin/systemcontrol_static:recovery/root/sbin/systemcontrol_static

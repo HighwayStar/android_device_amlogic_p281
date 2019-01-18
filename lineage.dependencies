@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_kernel_amlogic_q201",
+    "target_path": "kernel/amlogic/q201"
+  }
+]
