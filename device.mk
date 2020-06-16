@@ -36,7 +36,11 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.amlogic \
-    ueventd.amlogic.rc 
+    ueventd.amlogic.rc \
+    init.amlogic.board.rc \
+    init.amlogic.rc \
+    init.amlogic.usb.rc \
+    init.amlogic.wifi.rc
 
 # Call the proprietary setup
 $(call inherit-product, vendor/amlogic/q201/q201-vendor.mk)
