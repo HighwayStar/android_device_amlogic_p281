@@ -24,7 +24,6 @@ ro.appmarket.id=Amlogic
 
 #if need pppoe
 ro.net.pppoe=true
-persist.daemonsu.enable=true
 #the prop is used for enable or disable
 #DD+/DD force output when HDMI EDID is not supported
 #by default,the force output mode is enabled.

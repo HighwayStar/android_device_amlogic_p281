@@ -78,16 +78,6 @@ service installApk /system/bin/installApks.sh
         oneshot
         seclabel u:r:init:s0
 
-#add for supersu by lhh start
-service daemonsu /system/xbin/daemonsu --auto-daemon &
-       class core
-       oneshot
-       seclabel u:r:init:s0
-	disabled
-on property:persist.daemonsu.enable=true
-	start daemonsu
-#add for supersu by lhh end
-
 #lhh add remote mouse start
 service remotecfg12 /system/bin/remotecfg -t /system/etc/remote-mouse12.tab
        class core
