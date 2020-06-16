@@ -63,5 +63,15 @@ PRODUCT_PACKAGES += \
     init.amlogic.usb.rc \
     init.amlogic.wifi.rc
 
+# WiFi
+PRODUCT_PACKAGES += \
+    hostapd \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+
 # Call the proprietary setup
 $(call inherit-product, vendor/amlogic/q201/q201-vendor.mk)
