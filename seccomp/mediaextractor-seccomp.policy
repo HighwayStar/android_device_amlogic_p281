@@ -1,0 +1,6 @@
+readlinkat: 1
+pread64: 1
+
+# for debug info apk
+sendto: 1
+ppoll: 1

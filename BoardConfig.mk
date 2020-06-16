@@ -74,6 +74,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.amlogic
 TARGET_RECOVERY_FORCE_PIXEL_FORMAT := "RGB_565"
 LZMA_RAMDISK_TARGETS := recovery
 
+# Seccomp
+BOARD_SECCOMP_POLICY := device/amlogic/q201/seccomp
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include $(DEVICE_PATH)/twrp.mk
