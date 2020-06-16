@@ -36,6 +36,10 @@ TARGET_2ND_CPU_VARIANT := cortex-a9
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 
+# Audio
+BOARD_USES_GENERIC_AUDIO := false
+BOARD_USES_ALSA_AUDIO := true
+
 # HWC
 TARGET_USES_HWC2 := true
 
