@@ -109,6 +109,9 @@ ro.vendor.sw.version=709N1
 
 persist.sys.nobluetooth=false
 
+# Display
+ro.sf.lcd_density=240
+
 ######## UBOOTENV VARIBLES - r/w as system properties ##########
 #
 #  Now we can load ubootenv varibles to system properties.
