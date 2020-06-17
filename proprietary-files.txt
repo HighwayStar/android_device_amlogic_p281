@@ -1,0 +1,113 @@
+# accelerateboot
+bin/accelerateboot
+
+# amplayer
+lib/libamplayer.so
+lib64/libamplayer.so
+lib/libamavutils.so
+lib64/libamavutils.so
+lib/amplayer/libbluray_mod.so
+lib/amplayer/libcurl_mod.so
+lib/amplayer/libdash_mod.so
+lib/amplayer/libvhls_mod.so
+lib64/amplayer/libbluray_mod.so
+lib64/amplayer/libcurl_mod.so
+lib64/amplayer/libdash_mod.so
+lib64/amplayer/libvhls_mod.so
+lib/libbluray.so
+lib64/libbluray.so
+lib/libamcodec.so
+lib64/libamcodec.so
+lib/libamadec.so
+lib64/libamadec.so
+
+# audio
+lib/hw/audio.primary.amlogic.so
+lib64/hw/audio.primary.amlogic.so
+
+# EGL
+lib/egl/libGLES_mali.so
+lib64/egl/libGLES_mali.so
+
+
+# camera
+lib/hw/camera.amlogic.so
+lib64/hw/camera.amlogic.so
+lib/libjhead.so
+lib64/libjhead.so
+
+
+# display
+bin/systemcontrol
+etc/mesondisplay.cfg
+
+
+# gralloc
+lib/hw/gralloc.amlogic.so
+lib64/hw/gralloc.amlogic.so
+lib/libion.so
+lib64/libion.so
+lib/libfbcnf.so
+lib64/libfbcnf.so
+
+# hdmi
+bin/hdmi_cec
+lib/hw/hdmi_cec.amlogic.so
+lib64/hw/hdmi_cec.amlogic.so
+lib/libhdmicec.so
+lib64/libhdmicec.so
+
+# hwcomposer
+lib/hw/hwcomposer.amlogic.so
+lib64/hw/hwcomposer.amlogic.so
+lib/libamavutils_alsa.so
+lib64/libamavutils_alsa.so
+
+# Kernel
+lib/mali.ko
+lib/dwc3.ko
+lib/dwc_otg.ko
+
+# memtrack
+lib/hw/memtrack.amlogic.so
+lib64/hw/memtrack.amlogic.so
+
+
+# OMX
+lib/libdatachunkqueue_alt.so
+lib/libfpscalculator_alt.so
+lib/libomx_av_core_alt.so
+lib/libOmxBase.so
+lib/libomx_clock_utils_alt.so
+lib/libOmxCore.so
+lib/libomx_framework_alt.so
+lib/libomx_timed_task_queue_alt.so
+lib/libOmxVideo.so
+lib/libomx_worker_peer_alt.so
+lib/libstagefrighthw.so
+lib/libthreadworker_alt.so
+lib64/libdatachunkqueue_alt.so
+lib64/libfpscalculator_alt.so
+lib64/libomx_av_core_alt.so
+lib64/libOmxBase.so
+lib64/libomx_clock_utils_alt.so
+lib64/libOmxCore.so
+lib64/libomx_framework_alt.so
+lib64/libomx_timed_task_queue_alt.so
+lib64/libOmxVideo.so
+lib64/libomx_worker_peer_alt.so
+lib64/libstagefrighthw.so
+lib64/libthreadworker_alt.so
+lib/libsystemcontrolservice.so
+lib64/libsystemcontrolservice.so
+lib/libge2d.so
+lib64/libge2d.so
+
+
+# power
+lib/hw/power.amlogic.so
+lib64/hw/power.amlogic.so
+
+# screen source
+lib/hw/screen_source.amlogic.so
+lib64/hw/screen_source.amlogic.so
