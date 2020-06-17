@@ -40,26 +40,23 @@ on init
     # for tee
     mkdir /tee 0700 system system
     wait /dev/block/tee 1000
-    confirm_formated ext4 /dev/block/tee /tee 1024 1024
 
 
 on aml-firstboot-init
     #format data and cache patrition if not exist
     wait /dev/block/data 20
-    confirm_formated ext4 /dev/block/data /data
     wait /dev/block/cache 20
-    confirm_formated ext4 /dev/block/cache /cache
 
 on fs
     # first, only mount system, quick bringup accelerateboot
-    mount_all /fstab.amlogic --early_system
+    mount_all /fstab.amlogic --early
     start accelerateboot
 
     # then, mount other partition.
     # Note! mount cache is much faster than data, we store
     # learn result at cache partition. so cache should be
     # mounted early than data.
-    mount_all /fstab.amlogic --ignore_system
+    mount_all /fstab.amlogic --late
     mkdir /cache/accelboot 0777 root system
     mkdir /data/accelboot 0777
     setprop ro.boot.data_mounted true
