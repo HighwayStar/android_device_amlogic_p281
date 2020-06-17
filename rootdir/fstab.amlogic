@@ -7,6 +7,8 @@
 /dev/block/system     /system             ext4      ro                                                    wait
 /dev/block/cache      /cache              ext4      noatime,nosuid,nodev,nodelalloc,errors=panic    wait,check,formattable,latemount
 /dev/block/data       /data               ext4      noatime,nosuid,nodev,nodelalloc,errors=panic    wait,check,formattable,latemount,encryptable=footer
+/dev/block/boot                          /boot        emmc    defaults                                                                 defaults
+/dev/block/recovery                      /recovery    emmc    defaults                                                                 defaults
 /devices/*.sd/mmc_host/sd*  auto                auto      defaults                       voldmanaged=sdcard1:auto,noemulatedsd
 /devices/*dwc3/xhci-hcd.0.auto/usb?/*/host*/target*/block/sd*  auto             auto      defaults                       voldmanaged=udisk:auto
 /devices/*dwc3/xhci-hcd.0.auto/usb?/*/host*/target*/block/sr*  auto             auto      defaults                       voldmanaged=sr0:auto
