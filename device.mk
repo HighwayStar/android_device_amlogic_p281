@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
+
 # Amplayer
 PRODUCT_PACKAGES += \
     libcurl
