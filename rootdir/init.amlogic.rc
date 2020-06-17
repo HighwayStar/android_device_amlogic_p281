@@ -41,6 +41,7 @@ on init
     mkdir /tee 0700 system system
     wait /dev/block/tee 1000
 
+    export LD_SHIM_LIBS "/system/bin/systemcontrol|libshim_systemcontrol.so"
 
 on aml-firstboot-init
     #format data and cache patrition if not exist

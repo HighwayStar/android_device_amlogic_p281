@@ -72,6 +72,10 @@ PRODUCT_PACKAGES += \
     init.amlogic.usb.rc \
     init.amlogic.wifi.rc
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_systemcontrol
+
 # WiFi
 PRODUCT_PACKAGES += \
     hostapd \
