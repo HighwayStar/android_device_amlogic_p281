@@ -1,0 +1,5 @@
+type hdmi_cec, domain;
+type hdmi_cec_exec, exec_type, file_type;
+
+
+init_daemon_domain(hdmi_cec)

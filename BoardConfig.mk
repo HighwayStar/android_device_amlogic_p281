@@ -77,6 +77,9 @@ LZMA_RAMDISK_TARGETS := recovery
 # Seccomp
 BOARD_SECCOMP_POLICY := device/amlogic/q201/seccomp
 
+# SELinux
+BOARD_SEPOLICY_DIRS += device/amlogic/q201/sepolicy
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include $(DEVICE_PATH)/twrp.mk

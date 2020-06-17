@@ -1,0 +1,2 @@
+type system_control, domain;
+type system_control_exec, exec_type, file_type;

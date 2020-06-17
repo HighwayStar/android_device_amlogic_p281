@@ -1,0 +1,5 @@
+# remotecfg seclabel is specified in init.amlogic.rc
+type remotecfg, domain;
+type remotecfg_exec, exec_type, file_type;
+
+init_daemon_domain(remotecfg)
