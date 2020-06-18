@@ -88,5 +88,23 @@ ifeq ($(WITH_TWRP),true)
 include $(DEVICE_PATH)/twrp.mk
 endif
 
+WIFI_DRIVER := AP6255
+WIFI_DRIVER_MODULE_PATH := /system/lib/dhd.ko
+WIFI_DRIVER_MODULE_NAME := dhd
+WIFI_DRIVER_MODULE_ARG  := "firmware_path=/etc/wifi/6255/fw_bcm43455c0_ag.bin nvram_path=/etc/wifi/6255/nvram.txt"
+WIFI_DRIVER_FW_PATH_STA := /etc/wifi/6255/fw_bcm43455c0_ag.bin
+WIFI_DRIVER_FW_PATH_AP  := /etc/wifi/6255/fw_bcm43455c0_ag_apsta.bin
+WIFI_DRIVER_FW_PATH_P2P := /etc/wifi/6255/fw_bcm43455c0_ag_p2p.bin
+WIFI_EXT_MODULE_PATH := "/system/lib/cfg80211.ko"
+WIFI_EXT_MODULE_NAME := "cfg80211"
+BOARD_WLAN_DEVICE := bcmdhd
+WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/dhd/parameters/firmware_path"
+
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
+BOARD_HOSTAPD_DRIVER        := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_bcmdhd
+
 # Inherit from the proprietary version
 include vendor/amlogic/q201/BoardConfigVendor.mk
