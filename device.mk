@@ -16,6 +16,11 @@
 
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
+
 # Amplayer
 PRODUCT_PACKAGES += \
     libcurl
