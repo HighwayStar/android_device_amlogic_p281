@@ -25,6 +25,10 @@ lib64/libamadec.so
 lib/hw/audio.primary.amlogic.so
 lib64/hw/audio.primary.amlogic.so
 
+# Bluetooth
+vendor/lib/libbt-vendor.so
+vendor/lib64/libbt-vendor.so
+
 # EGL
 lib/egl/libGLES_mali.so
 lib64/egl/libGLES_mali.so
