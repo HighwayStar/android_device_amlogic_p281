@@ -19,6 +19,11 @@ $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 
 PRODUCT_CHARACTERISTICS := tablet
 
+# setup dalvik vm configs.
+$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
