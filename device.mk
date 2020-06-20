@@ -105,4 +105,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
 # Call the proprietary setup
-$(call inherit-product, vendor/amlogic/q201/q201-vendor.mk)
+$(call inherit-product, vendor/amlogic/p281/p281-vendor.mk)

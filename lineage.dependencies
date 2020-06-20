@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_kernel_amlogic_q201",
-    "target_path": "kernel/amlogic/q201"
+    "repository": "android_kernel_amlogic_p281",
+    "target_path": "kernel/amlogic/p281"
   }
 ]

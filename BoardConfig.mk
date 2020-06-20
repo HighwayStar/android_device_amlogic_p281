@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/amlogic/q201
+DEVICE_PATH := device/amlogic/p281
 
 # Bootloader
 TARGET_NO_RADIOIMAGE := true
 TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM := gxm
+TARGET_BOARD_PLATFORM := gxl
 TARGET_BOARD_HARDWARE := amlogic
 
 # Architecture
@@ -41,7 +41,7 @@ TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_USES_64_BIT_BINDER := true
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := q201,q201_n,q201_N
+TARGET_OTA_ASSERT_DEVICE := p281
 
 # Audio
 BOARD_USES_GENERIC_AUDIO := false
@@ -56,8 +56,8 @@ BOARD_KERNEL_OFFSET := 0x00008000
 TARGET_KERNEL_ARCH := arm64
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-TARGET_KERNEL_CONFIG := q201_defconfig
-TARGET_KERNEL_SOURCE := kernel/amlogic/q201
+TARGET_KERNEL_CONFIG := p281_defconfig
+TARGET_KERNEL_SOURCE := kernel/amlogic/p281
 endif
 BOARD_KERNEL_CMDLINE :=  androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := zImage
@@ -82,10 +82,10 @@ TARGET_RECOVERY_FORCE_PIXEL_FORMAT := "RGB_565"
 LZMA_RAMDISK_TARGETS := recovery
 
 # Seccomp
-BOARD_SECCOMP_POLICY := device/amlogic/q201/seccomp
+BOARD_SECCOMP_POLICY := device/amlogic/p281/seccomp
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/amlogic/q201/sepolicy
+BOARD_SEPOLICY_DIRS += device/amlogic/p281/sepolicy
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
@@ -111,4 +111,4 @@ BOARD_HOSTAPD_DRIVER        := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_bcmdhd
 
 # Inherit from the proprietary version
-include vendor/amlogic/q201/BoardConfigVendor.mk
+include vendor/amlogic/p281/BoardConfigVendor.mk

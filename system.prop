@@ -1,17 +1,14 @@
-#
-# from device/amlogic/q201/system.prop
-#
 # Set display related config
 ro.platform.has.mbxuimode=true
 ro.platform.has.realoutputmode=true
 ro.platform.keepbackground.app=com.droidlogic.PPPoE
 #camera max to 720p
-ro.camera.preview.MaxSize=1920x1088
-ro.camera.preview.LimitedRate=1920x1080x30,1280x720x30,640x480x30,320x240x28
+ro.camera.preview.MaxSize=1280x720
+ro.camera.preview.LimitedRate=1280x720x30,640x480x30,320x240x28
 ro.camera.preview.UseMJPEG=1
 
 #for bt auto connect
-ro.autoconnectbt.isneed=false
+ro.autoconnectbt.isneed=true
 ro.autoconnectbt.macprefix=00:CD:FF
 ro.autoconnectbt.btclass=50c
 ro.autoconnectbt.nameprefix=Amlogic_RC
@@ -19,11 +16,9 @@ ro.autoconnectbt.nameprefix=Amlogic_RC
 #if wifi Only
 ro.radio.noril=false
 
-#for appMarket
-ro.appmarket.id=Amlogic
-
 #if need pppoe
 ro.net.pppoe=true
+
 #the prop is used for enable or disable
 #DD+/DD force output when HDMI EDID is not supported
 #by default,the force output mode is enabled.
@@ -61,7 +56,6 @@ media.wfd.video-bitrate=2000000
 media.html5videowin.enable=1
 media.decoder.vfm.defmap=decoder ppmgr deinterlace amvideo
 media.decoder.vfm.drmmap=decoder amvideo
-ro.platform.support.dolbyvision=true
 
 persist.sys.dts.edid=false
 
@@ -87,6 +81,9 @@ ro.audio.mapvalue=0,0,0,0
 #Support storage visible to apps
 persist.fw.force_adoptable=true
 
+#wifi hotspot
+persist.sys.softap.band=0
+
 #add livhls,libcurl as default hls
 media.libplayer.curlenable=true
 media.libplayer.modules=vhls_mod,dash_mod,curl_mod,prhls_mod,vm_mod,bluray_mod
@@ -99,15 +96,11 @@ ro.sys.hdmiin.enable=true
 mbx.hdmiin.switchfull=false
 mbx.hdmiin.videolayer=false
 
-
 #adb
 service.adb.tcp.port=5555
+
 sys.open.deepcolor=true
 
-#netxeon begin
-ro.vendor.sw.version=709N1
-
-persist.sys.nobluetooth=false
 
 # Display
 ro.sf.lcd_density=240
@@ -191,4 +184,4 @@ ubootenv.var.is.bestmode=
 ubootenv.var.disp.fromleft=
 ubootenv.var.edid.crcvalue=
 ubootenv.var.colorattribute=
-
+ubootenv.var.bls=

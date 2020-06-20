@@ -15,8 +15,8 @@
 #
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit from those products. Most specific first.
@@ -26,17 +26,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/amlogic/q201/device.mk)
+$(call inherit-product, device/amlogic/p281/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_q201
-PRODUCT_DEVICE := q201
-PRODUCT_BRAND := amlogic
-PRODUCT_MODEL := Generic Amlogic S912 STB
+PRODUCT_NAME := lineage_p281
+PRODUCT_DEVICE := p281
+PRODUCT_BRAND := Amlogic
+PRODUCT_MODEL := Generic Amlogic S905W STB
 PRODUCT_MANUFACTURER := Amlogic
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=Beelink/q201/q201:7.1.2/NHG47L/20181016:userdebug/test-keys \
-    PRODUCT_NAME=q201 \
-    PRIVATE_BUILD_DESC="q201-userdebug 7.1.2 NHG47L 20181016 test-keys"
+    BUILD_FINGERPRINT=Khadas/kvim/kvim:7.1.2/NHG47L/20180210:userdebug/test-keys \
+    PRODUCT_NAME=p281 \
+    PRIVATE_BUILD_DESC="kvim-userdebug 7.1.2 NHG47L 20180210 test-keys"
