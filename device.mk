@@ -55,6 +55,27 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# Display props
+# common amlogic
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.render_dirty_regions=false \
+    ro.hwui.texture_cache_size=64.0f
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.fb.bits=32 \
+    ro.hdmi.device_type=4 \
+    persist.sys.hdmi.keep_awake=false
+
+# p281 only
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.full_activemode=false
+
+# Mali graphics
+# The OpenGL ES API level that is natively supported by this device.
+# This is a 16.16 fixed point number
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.opengles.version=131072
+
 # Media
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
